@@ -1,0 +1,11 @@
+sno  = int(input('enter student no:'))
+Name = input('enter student name:')
+Group= input('enter student group:')
+s1   = int(input('enter maths marks:'))
+s2   = int(input('enter electronic marks:'))
+s3   = int(input('enter computer marks:'))
+
+if s1>=35 and s2>=35 and s3>=35:
+   print(' Student Pass')
+else:
+    print(' Student Fail')
