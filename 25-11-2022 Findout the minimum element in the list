@@ -1,0 +1,6 @@
+list1=[1,2,3,6,7,10,43,7]
+max=list1[0]
+for i in list1:
+    if i>max:
+        max=i
+print('maximum value:',max)
