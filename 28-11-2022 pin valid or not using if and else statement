@@ -1,0 +1,8 @@
+PIN=1234
+x=int(input('Enter PIN Number: '))
+if x==PIN:
+        print('*****Valid Pin*****')
+        print('****Login Sucessful****')
+else:
+    print('****Invalid Pin*****')
+    print('****please try again****')
