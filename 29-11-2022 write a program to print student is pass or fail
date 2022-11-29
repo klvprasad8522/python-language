@@ -1,0 +1,16 @@
+sno=int(input('Enter Student Rollonumber:'))
+sname=input('Enter Student Name:')
+group=input('Enter student group:')
+s1=int(input('Enter maths marks:'))
+s2=int(input('Enter electronic marks:'))
+s3=int(input('Enter computer marks:'))
+print('Sno:',sno)
+print('Sname:',sname)
+print('Group:',group)
+print('S1:',s1)
+print('S2:',s2)
+print('S3:',s3)
+if s1>=35 and s2>=35 and s3>=35:
+       print('Student pass')
+else:
+       print('Student fail')
