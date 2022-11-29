@@ -1,0 +1,23 @@
+empo=int(input('Enter employee id:'))
+empname=input('Enter employee name:')
+empdesig=input('Enter employee desig:')
+basicsalary=int(input('Enter basicsalary:'))
+da=int(input('Enter daily allowance:'))
+ta=int(input('Enter Travelling allowance:'))
+hra=int(input('Enter House Rental allowance:'))
+netsalary=basicsalary+da+ta+hra
+print('Netsalary:',netsalary)
+if netsalary>100000:
+   tax=netsalary*10/100
+   print('Tax:',tax)
+elif netsalary>50000:
+     tax=netsalary*7/100
+     print('Tax:',tax)
+elif netsalary>40000:
+     tax=netsalary*4/100
+     print('Tax:',tax)
+elif netsalary>20000:
+     tax=netsalary*2/100
+     print('Tax:',tax)
+elif netsalary<20000:
+     print('No tax')
