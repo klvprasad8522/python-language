@@ -1,0 +1,30 @@
+r=200
+o=100
+e=5
+br=250
+dr=100
+cphno=int(input('Enter customer phono number:'))
+cname=input('Enter customer name:')
+caddre=input('Entr customer address:')
+rq=int(input('How many rice packets you want!'))
+oq=int(input('How many oil packets you want!'))
+eq=int(input('How many eggs  you want!'))
+brq=int(input('How many Brown rice packets you want!'))
+drq=int(input('How many  drinks you want!'))
+bill=(rq*r)+(oq*o)+(eq*e)+(brq*br)+(drq*dr)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+print('customer phono number:',cphno)
+print('customer name:',cname)
+print('customer address:',caddre)
+print('Tax amount:',tax)
+print('Bill amount:',bill)
