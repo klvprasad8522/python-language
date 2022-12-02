@@ -1,0 +1,42 @@
+
+'''
+#write a program leap year or not print yes or no using functions on python
+def leap_year(year):
+     if year%4==0 and year%100!=0:
+        print('Yes')
+     if year%400==0:
+        print('Yes')
+     else:
+        print('No')
+year=int(input())
+leap_year(year)
+
+#way-2
+
+#write a program leap year or not print yes or no using functions on python
+def leap_year(year):
+    if year%4==0 and year%100!=0:
+        return "Yes"
+    if year%400==0:
+        return "Yes"
+    else:
+        return "No"
+year=int(input())
+print(leap_year(year))
+
+#way-3
+#write a program leap year or not print yes or no using functions on python
+def leap_year(year):
+    if year%4==0 and year%100!=0:
+        return True
+    if year%400==0:
+        return True
+    else:
+        return False
+year=int(input())
+if(leap_year(year)):
+    print('Yes')
+else:
+    print('No')
+
+'''
