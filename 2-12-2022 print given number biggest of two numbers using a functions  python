@@ -1,0 +1,35 @@
+'''
+
+#write a program to print given  eligible or not eligible  using functions
+def eligible(n):
+    if n>=18 and n<=30:
+        print('Yes')
+    else:
+        print('No')
+n=int(input())
+eligible(n)
+
+#way-2
+
+#write a program to print given  eligible or not eligible  using functions
+def eligible(n):
+    if n>=18 and n<=30:
+        return "Yes"
+    else:
+        return "No"
+n=int(input())
+print(eligible(n))
+
+#way-3
+#write a program to print given person eligible or not eligible  using functions
+def eligible(n):
+    if n>=18 and n<=30:
+        return True
+    else:
+        return False
+n=int(input())
+if(eligible(n)):
+    print('Yes')
+else:
+    print('No')
+'''
