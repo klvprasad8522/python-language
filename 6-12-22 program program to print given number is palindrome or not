@@ -1,0 +1,15 @@
+num = int(input("Enter the integer number: "))  
+ 
+sum = 0  
+temp=num
+while (num > 0):  
+    
+    remainder = num % 10  
+    sum = (sum * 10) + remainder  
+    num = num // 10  
+    
+num=temp
+if(num==sum):
+    print('pallindrome')
+else:
+    print('Not a pallindrome')
