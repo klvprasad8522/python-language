@@ -1,0 +1,17 @@
+num = int(input("Enter the integer number: "))  
+ 
+sum = 0  
+temp=num
+while (num > 0):  
+    
+    remainder = num % 10 
+    c=remainder*remainder*remainder
+    sum = sum + c 
+    num = num // 10  
+    
+num=temp
+if(num==sum):
+    print('Armstrong')
+else:
+    print('Not a Armstrong')
+  
