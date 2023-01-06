@@ -1,0 +1,5 @@
+n = input()
+k = list(map(int,input().split()))
+s = set(k)
+for i in s:
+    print(i,end=' ')
