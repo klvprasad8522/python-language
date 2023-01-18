@@ -1,0 +1,14 @@
+def convert(t):
+    h=int(t[0:2])
+    if h==0:
+        return '12'+t[2:8]+'AM'
+    elif h>=1 and h<=11:
+        return t[0:8]+'AM'
+    elif h==12:
+        return t[0:8]+'PM'
+    elif h>=13 and h<=23:
+        h=h-12
+        return str(h)+t[2:8]+'PM'
+ 
+t=input()
+print(convert(t))
